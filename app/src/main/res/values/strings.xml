@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ejercicio2</string>
+
+    <string name="nombre">Nombre Película</string>
+    <string name="anio">Año</string>
+    <string name="boton_agregar">Agregar</string>
+    <string name="ver_listado">Ver Listado</string>
+    <string name="imgGenero">Imagen genero</string>
+
+
+
+</resources>
