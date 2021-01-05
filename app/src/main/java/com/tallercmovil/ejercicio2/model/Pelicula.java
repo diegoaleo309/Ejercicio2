@@ -10,20 +10,17 @@ import com.tallercmovil.ejercicio2.R;
 
 public class Pelicula implements Parcelable {
 
+
     public int id;
     public String titulo;
     public Genero genero;
     public int anio;
     public static Genero[] generos={
-            new Genero("Animación", R.drawable.comedia),
-            new Genero ("Acción", R.drawable.comedia),
-            new Genero ("Acción", R.drawable.comedia),
-            new Genero ("Acción", R.drawable.comedia),
-            new Genero ("Acción", R.drawable.comedia),
-            new Genero ("Acción", R.drawable.comedia),
-            new Genero ("Acción", R.drawable.comedia)
-
-
+            new Genero("Animación", R.drawable.animacion),
+            new Genero ("Comedia", R.drawable.comedia),
+            new Genero ("Terror", R.drawable.terror),
+            new Genero ("Drama", R.drawable.drama),
+            new Genero ("Romance", R.drawable.romance)
 
 
     };

@@ -16,6 +16,7 @@ import com.tallercmovil.ejercicio2.model.Pelicula;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -23,7 +24,6 @@ public class MainActivity extends AppCompatActivity  {
     /*
     *
     * FALTA: 1) poner unique id a cada pelicula
-    *       2) agregar todos los generos
     *
     *
     *
@@ -83,9 +83,15 @@ public class MainActivity extends AppCompatActivity  {
 
         if (validacion()) {
 
+            UUID idOne = UUID.randomUUID();
+            UUID idTwo = UUID.randomUUID();
+            System.out.println("UUID One: " + idOne);
+            System.out.println("UUID Two: " + idTwo);
+
             Pelicula p = new Pelicula(0, etNombre.getText().toString(), genero, Integer.parseInt(etAnio.getText().toString()));
-            System.out.println(genero);
+            //System.out.println(genero);
             peliculas.add(p);
+
             etNombre.setText("");
             etAnio.setText("");
             spinner.setSelection(0);
