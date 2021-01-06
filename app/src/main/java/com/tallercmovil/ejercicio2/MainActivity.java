@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity  {
     Bundle bundle;
     ArrayList<Pelicula> peliculas;
     Spinner spinner;
+    int id = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,8 +89,7 @@ public class MainActivity extends AppCompatActivity  {
             System.out.println("UUID One: " + idOne);
             System.out.println("UUID Two: " + idTwo);
 
-            Pelicula p = new Pelicula(0, etNombre.getText().toString(), genero, Integer.parseInt(etAnio.getText().toString()));
-            //System.out.println(genero);
+            Pelicula p = new Pelicula(id++, etNombre.getText().toString(), genero, Integer.parseInt(etAnio.getText().toString()));
             peliculas.add(p);
 
             etNombre.setText("");
